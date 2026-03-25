@@ -34,10 +34,14 @@ simple example.c, Uart Receiver interrupt.c, lcd.c, lcd.h
  
 # PROGRAM:
 ```
-#include"lcd.h" void ADCExp(); int main(void)
+#include"lcd.h"
+void ADCExp();
+ int main(void)
 {
-ReceiverInterrupt(); init_lcd();
-lcd_putstring(LINE1, "RAANA ADC DEMO "); ADCExp();
+ReceiverInterrupt();
+init_lcd();
+lcd_putstring(LINE1, "RAANA ADC DEMO ");
+ADCExp();
 while(1)
 {
 }
